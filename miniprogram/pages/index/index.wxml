@@ -4,10 +4,12 @@
   <!-- 上传图片 -->
   <view class="uploader">
     <view class="uploader-text" bindtap="doUpload">
-      <text>上传图片</text>
+      <text>图像安全审核</text>
     </view>
-    <view class="uploader-container" wx:if="{{imgUrl}}">
-      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
-    </view>
+  </view>
+    <view class="uploader">
+    <navigator url="../imgLabel/imgLabel" open-type="navigate" class="uploader-text">
+      <text>图像标签</text>
+    </navigator>
   </view>
 </view>

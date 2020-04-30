@@ -36,7 +36,14 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": []
+			"list": [
+				{
+					"id": -1,
+					"name": "图片标签",
+					"pathName": "pages/imgLabel/imgLabel",
+					"scene": null
+				}
+			]
 		}
 	}
 }

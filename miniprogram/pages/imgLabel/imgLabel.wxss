@@ -1,0 +1,60 @@
+/* pages/imgLabel/imgLabel.wxss */
+.k_title {
+  text-align: center;
+  margin-top: 60rpx;
+  margin-bottom: 100rpx;
+}
+
+.k_title text {
+  width: 266px;
+  height: 20px;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(170, 170, 170, 1);
+  line-height: 20px;
+}
+
+.k_img {
+  text-align: center;
+
+}
+
+.k_img image {
+  width: 600rpx;
+  height: 600rpx;
+  background: rgba(249, 249, 249, 1);
+}
+
+.k_img .k_height {
+  height: 400rpx;
+}
+
+.k_button {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: rgba(49, 114, 238, 1);
+  color: white;
+}
+
+.k_button button {
+  width: 100%;
+  color: white;
+}
+
+.k_label {
+  display: flex;
+  justify-content: center;
+  margin-top: 60rpx;
+}
+
+.k_label text {
+  padding: 10rpx;
+  margin: 10rpx;
+  border: 1px solid rgba(151, 151, 151, 1);
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 20px;
+}
