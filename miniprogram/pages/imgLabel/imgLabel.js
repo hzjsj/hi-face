@@ -27,16 +27,22 @@ Page({
       },
     })
     .then(res => {
-      wx.hideLoading()
-      console.log(res) 
       this.setData({
         labels:res.result.data.list
       })
+      wx.hideLoading()
     })
-    .catch(console.error)
+    .catch(error => {
+      wx.showToast({
+        title: '识别识别',
+        icon: 'none',
+        duration: 2000
+      })
+    })
   },
     //图像安全审核
     imgCheck:function(e){
+      let that = this
       let fileID = e
       wx.cloud.callFunction({
         // 云函数名称
@@ -57,7 +63,7 @@ Page({
             showCancel:false,
             success (res) {
               if (res.confirm) {
-                this.setData({
+                that.setData({
                   image:''
                 })
                 console.log('用户点击确定')
@@ -115,54 +121,5 @@ Page({
           console.error(e)
         }
       })
-    },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
+    }
 })

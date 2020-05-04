@@ -41,6 +41,21 @@
 					"id": -1,
 					"name": "图片标签",
 					"pathName": "pages/imgLabel/imgLabel",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/imgFace/imgFace",
+					"pathName": "pages/imgFace/imgFace",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/imgLabel/imgLabel",
+					"pathName": "pages/imgLabel/imgLabel",
+					"query": "",
 					"scene": null
 				}
 			]

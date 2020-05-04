@@ -1,0 +1,6 @@
+{
+  "usingComponents":{},
+  "navigationBarTitleText":"人脸识别",
+  "navigationStyle":"custom",
+  "disableScroll":true,
+  "navigationBarTextStyle":"black"}

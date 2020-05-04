@@ -58,3 +58,30 @@
   color: #000000;
   line-height: 20px;
 }
+
+.main-button {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+  background: #3172ee;
+  font-size: 36rpx;
+  line-height: 120rpx;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 6rpx
+}
+
+.main-button:before {
+  content: '';
+  display: inline-block;
+  width: 54rpx;
+  height: 54rpx;
+  background: url(https://7376-svip9-1258873690.tcb.qcloud.la/images/buttonAdd.png?sign=c46627ec2ccc50abb974f0e6a8e84479&t=1588558572) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  margin: -6rpx 16rpx 0 0
+}

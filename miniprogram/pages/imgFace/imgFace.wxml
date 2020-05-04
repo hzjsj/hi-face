@@ -1,0 +1,43 @@
+ <view class="detect-face-page" style="background-color:{{color}}">
+ 	<view class="page-title">人脸识别</view>
+ 	<view class="label-list">
+ 	</view>
+ 	<view class="image-wrap">
+ 		<block>
+ 			<block wx:if="{{!!faceImageUrl}}">
+ 				<view class="shape-wrap">
+ 					<image src="{{faceImageUrl}}" mode="widthFix" class="image-selected"></image>
+ 					<view wx:key="index" class="{{'shape-item ' + (currentShapeIndex === shape.shapeIndex ? 'shape-item-active' : '')}}" wx:for="{{shapeList}}" wx:for-item="shape" style="left:{{shape.left}}rpx;top:{{shape.top}}rpx;width:{{shape.width}}rpx;height:{{shape.height}}rpx">
+ 						<view class="shape-area" bindtap="onChooseShape" data-index="{{shape.shapeIndex}}">
+ 							<view class="face-line left-top"></view>
+ 							<view class="face-line right-top"></view>
+ 							<view class="face-line left-bottom"></view>
+ 							<view class="face-line right-bottom"></view>
+ 						</view>
+ 						<block wx:if="{{currentShapeIndex === shape.shapeIndex}}">
+ 							<view class="{{'shape-desc ' + (shape.left + shape.width + 250 > 600 ? 'in-left' : 'in-right')}}">
+ 								<view>年龄: {{shape.age}}</view>
+ 								<view>表情: {{shape.expressionStr}}</view>
+ 								<view>魅力: {{shape.beauty}}</view>
+ 								<view>眼镜: {{shape.glassStr}}</view>
+ 								<view>帽子: {{shape.hatStr}}</view>
+ 								<view>口罩: {{shape.maskStr}}</view>
+ 							</view>
+ 						</block>
+ 					</view>
+ 				</view>
+ 			</block>
+ 			<block wx:else>
+ 				<view class="to-choose" bindtap="chooseImage"></view>
+ 			</block>
+ 		</block>
+ 		<view class="image-tips">{{tips}}</view>
+ 		<block wx:if="{{shapeList.length > 0}}">
+ 			<scroll-view scroll-x="{{true}}" class="cut-wrap">
+ 				<image src="{{faceImageUrl}}" mode="aspectFit" bindtap="onChooseShape" class="{{'cut-item ' + (currentShapeIndex === -1 ? 'cut-item-active' : '')}}" data-index="{{-1}}"></image>
+ 				<image wx:for="{{showCutList}}" wx:key="index" src="{{item.cutFileUrl}}" bindtap="onChooseShape" data-index="{{item.shapeIndex}}" mode="aspectFit" class="{{'cut-item ' + (currentShapeIndex === item.shapeIndex ? 'cut-item-active' : '')}}"></image>
+ 			</scroll-view>
+ 		</block>
+ 	</view>
+ 	<view class="main-button" bindtap="chooseImage">上传</view>
+ </view>

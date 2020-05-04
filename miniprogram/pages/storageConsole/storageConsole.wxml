@@ -6,7 +6,7 @@
 			<text class="black">识别结果</text>
 		</view>
 		<view class="list-item">
-			<text class="request-text">鉴黄审核信息：{{cloudPath}}</text>
+			<text class="request-text">鉴黄审核信息：</text>
 		</view>
 		<view class="list-item">
     <text class="request-text code">
@@ -14,7 +14,7 @@
     </text>
 		</view>
 		<view class="list-item">
-			<text class="request-text">鉴暴恐审核信息：{{cloudPath}}</text>
+			<text class="request-text">鉴暴恐审核信息：</text>
 		</view>
 		<view class="list-item">
     <text class="request-text code">
@@ -22,7 +22,7 @@
     </text>
 		</view>
 		<view class="list-item">
-			<text class="request-text">鉴政审核信息：{{cloudPath}}</text>
+			<text class="request-text">鉴政审核信息：</text>
 		</view>
 			<view class="list-item">
     <text class="request-text code">

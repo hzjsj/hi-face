@@ -1,5 +1,5 @@
 {
-  "name": "DetectLabel",
+  "name": "image-safe-check",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@cloudbase/extension-ci": "^0.2.0",
-    "tcb-admin-node": "^1.22.2"
+    "@cloudbase/extension-ci": "latest",
+    "tcb-admin-node": "latest"
   }
 }

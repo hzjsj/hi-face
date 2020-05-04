@@ -1,18 +1,14 @@
 <!--pages/imgLabel/imgLabel.wxml-->
 <view class="k_title">
-<text>上传图片，会自动显示图片的主要特征标签</text>
+	<text>上传图片，会自动显示图片的主要特征标签</text>
 </view>
 <view class="k_img" wx:if="{{image}}">
-<image class="k_height" src="{{image}}"></image>
+	<image class="k_height" src="{{image}}"></image>
 </view>
 <view class="k_img" wx:else>
-<image src="../../images/tengxunyun.png"></image>
+	<image src="../../images/tengxunyun.png"></image>
 </view>
 <view class="k_label" wx:if="{{image}}">
-<text wx:for="{{labels}}" wx:key="index">{{item.name}}</text>
+	<text wx:for="{{labels}}" wx:key="index">{{item.name}}</text>
 </view>
-<view class="k_button">
-<button  size="default"  bindtap="doUpload"> 上传 </button>
-</view>
-
-
+<view class="main-button" bindtap="doUpload">上传</view>
