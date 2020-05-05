@@ -1,20 +1,18 @@
 <!--index.wxml-->
 <view class="container">
-
-	<!-- 上传图片 -->
-	<view class="uploader">
-		<view class="uploader-text" bindtap="doUpload">
-			<text>图像安全审核</text>
-		</view>
-	</view>
 	<view class="uploader">
 		<navigator url="../imgLabel/imgLabel" open-type="navigate" class="uploader-text">
 			<text>图像标签</text>
 		</navigator>
 	</view>
-  	<view class="uploader">
+	<view class="uploader">
 		<navigator url="../imgFace/imgFace" open-type="navigate" class="uploader-text">
 			<text>人脸识别</text>
+		</navigator>
+	</view>
+	<view class="uploader">
+		<navigator url="../mask/mask" open-type="navigate" class="uploader-text">
+			<text>我要戴口罩</text>
 		</navigator>
 	</view>
 </view>

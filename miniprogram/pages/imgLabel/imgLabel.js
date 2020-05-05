@@ -40,6 +40,7 @@ Page({
       })
     })
   },
+  
     //图像安全审核
     imgCheck:function(e){
       let that = this
@@ -75,6 +76,7 @@ Page({
       })
       .catch(console.error)
     },
+
     // 上传图片
     doUpload: function () {
       let that = this;

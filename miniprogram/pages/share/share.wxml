@@ -1,0 +1,19 @@
+<view class="k_page">
+  <view class='nav' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      温馨戴口罩
+    </view>
+  </view>
+  <view class="k_broder">
+  <view class="k_image">
+   <image src="{{fileID}}" ></image>
+  </view>
+  </view>
+  <view class="k_button">
+  <image class="k_refresh" bindtap="back" src="https://7376-svip9-1258873690.tcb.qcloud.la/img/refresh.png?sign=d3527594130aedc5e47110e00e9d908e&t=1588642489"></image>
+  <button class="k_share">生成分享海报</button>
+  <button class="k_yaoqing" open-type="share">
+  <text>邀请好友</text>
+  </button>
+  </view>
+</view>

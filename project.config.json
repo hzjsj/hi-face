@@ -2,12 +2,27 @@
 	"miniprogramRoot": "miniprogram/",
 	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
+		"enhance": true,
 		"postcss": true,
+		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
-		"enhance": true
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"appid": "wx2e2ae559f314e176",
 	"projectname": "%E5%AE%9E%E4%BE%8B",
@@ -56,6 +71,20 @@
 					"name": "pages/imgLabel/imgLabel",
 					"pathName": "pages/imgLabel/imgLabel",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "戴口罩",
+					"pathName": "pages/mask/mask",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "分享",
+					"pathName": "pages/share/share",
+					"query": "id=982133855eb10496001478d22dfe7b65",
 					"scene": null
 				}
 			]

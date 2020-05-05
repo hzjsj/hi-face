@@ -1,15 +1,16 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/storageConsole/storageConsole",
     "pages/imgLabel/imgLabel",
-    "pages/imgFace/imgFace"
+    "pages/imgFace/imgFace",
+    "pages/mask/mask",
+    "pages/share/share"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "图片处理",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"

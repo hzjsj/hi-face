@@ -131,6 +131,7 @@ Page({
     })
     .catch(console.error)
   },
+  
   // 上传图片
   chooseImage: function () {
     let that = this;
@@ -147,7 +148,7 @@ Page({
         const filePath = res.tempFilePaths[0]
 
         // 上传图片
-        const cloudPath = 'my-image' + `${Date.now()}-${Math.floor(Math.random(0, 1) * 10000000)}` + filePath.match(/\.[^.]+?$/)[0]
+        const cloudPath = 'myimage/' + `${Date.now()}-${Math.floor(Math.random(0, 1) * 10000000)}` + filePath.match(/\.[^.]+?$/)[0]
         wx.cloud.uploadFile({
           cloudPath,
           filePath,
