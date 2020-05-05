@@ -105,7 +105,7 @@ Page({
 
     let way = event.target.dataset.way || 'album'
     const chooseImage = promisify(wx.chooseImage)
-    console.log('way :', way);
+
     chooseImage({
       count: 1,
       sourceType: [way]
